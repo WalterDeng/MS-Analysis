@@ -1,0 +1,8 @@
+LIBRARY data_baseline
+EXPORTS
+data_baselineInitialize
+data_baselineInitializeWithHandlers
+data_baselineTerminate
+data_baselinePrintStackTrace
+mlxData_baseline
+

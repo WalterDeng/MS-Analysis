@@ -1,0 +1,12 @@
+{
+    "data_tag": "ZS1E_LUNG",
+    "data_root": "D:\\DATA\\",
+	"pre_data": "\\pre_data\\",
+	"model_data": "\\model_data\\",
+
+    "retest_consistency": {
+      "path": "D:\\DATA\\retest consistency\\A002-0614",
+      "start_time": 285,
+      "peak_rt": [47.6, 127.8, 199.6, 276.6, 341, 379.4]
+    }
+}

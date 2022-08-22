@@ -1,0 +1,92 @@
+[
+  {
+    "directory": "C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\g++ -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=data_baseline_mex -D__USE_MINGW_ANSI_STDIO=1 -DMW_NEEDS_VERSION_H   data_baseline_data.cpp -o build/win64/data_baseline_data.o",
+    "file": "data_baseline_data.cpp",
+    "output": "build/win64/data_baseline_data.o"
+  },
+  {
+    "directory": "C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\g++ -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=data_baseline_mex -D__USE_MINGW_ANSI_STDIO=1 -DMW_NEEDS_VERSION_H   rt_nonfinite.cpp -o build/win64/rt_nonfinite.o",
+    "file": "rt_nonfinite.cpp",
+    "output": "build/win64/rt_nonfinite.o"
+  },
+  {
+    "directory": "C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\g++ -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=data_baseline_mex -D__USE_MINGW_ANSI_STDIO=1 -DMW_NEEDS_VERSION_H   data_baseline_initialize.cpp -o build/win64/data_baseline_initialize.o",
+    "file": "data_baseline_initialize.cpp",
+    "output": "build/win64/data_baseline_initialize.o"
+  },
+  {
+    "directory": "C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\g++ -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=data_baseline_mex -D__USE_MINGW_ANSI_STDIO=1 -DMW_NEEDS_VERSION_H   data_baseline_terminate.cpp -o build/win64/data_baseline_terminate.o",
+    "file": "data_baseline_terminate.cpp",
+    "output": "build/win64/data_baseline_terminate.o"
+  },
+  {
+    "directory": "C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\g++ -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=data_baseline_mex -D__USE_MINGW_ANSI_STDIO=1 -DMW_NEEDS_VERSION_H   data_baseline.cpp -o build/win64/data_baseline.o",
+    "file": "data_baseline.cpp",
+    "output": "build/win64/data_baseline.o"
+  },
+  {
+    "directory": "C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\g++ -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=data_baseline_mex -D__USE_MINGW_ANSI_STDIO=1 -DMW_NEEDS_VERSION_H   mean.cpp -o build/win64/mean.o",
+    "file": "mean.cpp",
+    "output": "build/win64/mean.o"
+  },
+  {
+    "directory": "C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\g++ -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=data_baseline_mex -D__USE_MINGW_ANSI_STDIO=1 -DMW_NEEDS_VERSION_H   sumMatrixIncludeNaN.cpp -o build/win64/sumMatrixIncludeNaN.o",
+    "file": "sumMatrixIncludeNaN.cpp",
+    "output": "build/win64/sumMatrixIncludeNaN.o"
+  },
+  {
+    "directory": "C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\g++ -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=data_baseline_mex -D__USE_MINGW_ANSI_STDIO=1 -DMW_NEEDS_VERSION_H   indexShapeCheck.cpp -o build/win64/indexShapeCheck.o",
+    "file": "indexShapeCheck.cpp",
+    "output": "build/win64/indexShapeCheck.o"
+  },
+  {
+    "directory": "C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\g++ -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=data_baseline_mex -D__USE_MINGW_ANSI_STDIO=1 -DMW_NEEDS_VERSION_H   std.cpp -o build/win64/std.o",
+    "file": "std.cpp",
+    "output": "build/win64/std.o"
+  },
+  {
+    "directory": "C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\g++ -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=data_baseline_mex -D__USE_MINGW_ANSI_STDIO=1 -DMW_NEEDS_VERSION_H   find.cpp -o build/win64/find.o",
+    "file": "find.cpp",
+    "output": "build/win64/find.o"
+  },
+  {
+    "directory": "C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\g++ -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=data_baseline_mex -D__USE_MINGW_ANSI_STDIO=1 -DMW_NEEDS_VERSION_H   interface/_coder_data_baseline_api.cpp -o build/win64/_coder_data_baseline_api.o",
+    "file": "interface/_coder_data_baseline_api.cpp",
+    "output": "build/win64/_coder_data_baseline_api.o"
+  },
+  {
+    "directory": "C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\g++ -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=data_baseline_mex -D__USE_MINGW_ANSI_STDIO=1 -DMW_NEEDS_VERSION_H   interface/_coder_data_baseline_mex.cpp -o build/win64/_coder_data_baseline_mex.o",
+    "file": "interface/_coder_data_baseline_mex.cpp",
+    "output": "build/win64/_coder_data_baseline_mex.o"
+  },
+  {
+    "directory": "C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\g++ -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=data_baseline_mex -D__USE_MINGW_ANSI_STDIO=1 -DMW_NEEDS_VERSION_H   eml_int_forloop_overflow_check.cpp -o build/win64/eml_int_forloop_overflow_check.o",
+    "file": "eml_int_forloop_overflow_check.cpp",
+    "output": "build/win64/eml_int_forloop_overflow_check.o"
+  },
+  {
+    "directory": "C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\g++ -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=data_baseline_mex -D__USE_MINGW_ANSI_STDIO=1 -DMW_NEEDS_VERSION_H   interface/_coder_data_baseline_info.cpp -o build/win64/_coder_data_baseline_info.o",
+    "file": "interface/_coder_data_baseline_info.cpp",
+    "output": "build/win64/_coder_data_baseline_info.o"
+  },
+  {
+    "directory": "C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2021b\\3P.instrset\\mingw_w64.instrset\\bin\\g++ -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\" -I \"C:\\Users\\DELL\\PycharmProjects\\MS-analysis\\Data preprocessing\\Matlab version\\codegen\\mex\\data_baseline\\interface\" -I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" -I \".\" -DMODEL=data_baseline_mex -D__USE_MINGW_ANSI_STDIO=1 -DMW_NEEDS_VERSION_H   \"C:/Program Files/MATLAB/R2021b/extern/version/cpp_mexapi_version.cpp\" -o build/win64/cpp_mexapi_version.o",
+    "file": "C:/Program Files/MATLAB/R2021b/extern/version/cpp_mexapi_version.cpp",
+    "output": "build/win64/cpp_mexapi_version.o"
+  }
+]
