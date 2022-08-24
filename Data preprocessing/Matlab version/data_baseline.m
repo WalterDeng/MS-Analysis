@@ -1,11 +1,20 @@
-function [data_baselined, base] = data_baseline(data, peak_threshold, smooth_window, noise_window)
+function [data_baselined, base] = data_baseline(data)
 % 对传入的二维数据data执行平滑、基线校准，并输出为data_baselined, base为确定的基线
 %   此处显示详细说明
 % smooth_window, noise_window最好为偶数
 % peak_threshold = 8000，smooth_window=4，noise_window=6
+% 输入 data ：(1, feature_num)
+% 输出 data_baselined ：(feature_num)
+% 输出 base : (feature_num)
+
+    % --------------------- 要自动化处理的参数 -------------------------------------
+    peak_threshold = 8000;
+    smooth_window = 4;
+    noise_window = 6;
+    % --------------------- 要自动化处理的参数 -------------------------------------
 
     %Smoothing (moving average)
-    [m1,n1] = size(data);
+    [n1, m1] = size(data);
     a1      = 1:m1;
     Sx      = zeros(m1,n1);
     iv      = round(smooth_window/2);
@@ -15,14 +24,14 @@ function [data_baselined, base] = data_baseline(data, peak_threshold, smooth_win
     %assignin('base','m1',m1);
    % assignin('base','iv',iv);
     for i = smooth_window:vv
-        Sx(i-iv+1, :) = mean(data(a1(i-smooth_window+1):a1(i), :));
+        Sx(i-iv+1, :) = mean(data(:, a1(i-smooth_window+1):a1(i)));
     end
     
     data_baselined_ = zeros(n1,m1);
     Base_          = zeros(n1,m1);
     for I = 1:n1 %from sample 1 to n1
         sx   = Sx(:,I);
-        x    = data(:,I);
+        x    = data(I, :);
         l    = length(x);
         j    = l-noise_window;
         Mstd = zeros(1,m1);
@@ -32,7 +41,7 @@ function [data_baselined, base] = data_baseline(data, peak_threshold, smooth_win
         end
 
         %Noiese is separated from peaks by making a matrix only containing noise:
-        noise = x(1:m1,1);
+        noise = x(1, 1:m1);
         for i=6:m1
             if Mstd(1,i)<peak_threshold && Mstd(1,i-5)<peak_threshold && x(i)<500000000
                 noise(i) = x(i);
@@ -41,7 +50,7 @@ function [data_baselined, base] = data_baseline(data, peak_threshold, smooth_win
             end
         end
 
-        base_ = x';
+        base_ = x;
         %The baseline is estimated as straight line from start to stop of intervals:
         x_baselined = zeros(1,m1);
         N = isnan(noise);
@@ -55,7 +64,7 @@ function [data_baselined, base] = data_baseline(data, peak_threshold, smooth_win
     
                 slope                   = (x(stop+1)-x(start-1)) / (stop - start+1);
                 base_(start:stop)        = x(start) + (1:(stop-start+1))*slope;
-                x_baselined(start:stop) = (x(start:stop)'-base_(start:stop));
+                x_baselined(start:stop) = (x(start:stop)-base_(start:stop));
     
                 [x_baselined, base_, S1]       = Baseline(x_baselined, start, stop, x, I, base_);
                 if S1 ~= 0
@@ -92,8 +101,8 @@ function [data_baselined, base] = data_baseline(data, peak_threshold, smooth_win
     
         data_baselined_(I,:) = x_baselined;
     end
-    data_baselined = data_baselined_;
-    base = Base_;
+    data_baselined = data_baselined_(1, :);
+    base = Base_(1, :);
 end
 
 function [x_baselined, base, S] = Baseline(x_baselined, start, stop, x, I, base)
@@ -135,5 +144,5 @@ function [x_baselined, base, S] = Baseline(x_baselined, start, stop, x, I, base)
     else
         S                = 0;
     end
-    x_baselined(start:stop) = (x(start:stop)'-base(start:stop));
+    x_baselined(start:stop) = (x(start:stop)-base(start:stop));
 end

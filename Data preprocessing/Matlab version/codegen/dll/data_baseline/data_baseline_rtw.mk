@@ -2,7 +2,7 @@
 ## Makefile generated for component 'data_baseline'. 
 ## 
 ## Makefile     : data_baseline_rtw.mk
-## Generated on : Thu Feb 17 16:49:09 2022
+## Generated on : Thu Mar 03 17:40:08 2022
 ## Final product: ./data_baseline.dll
 ## Product type : dynamic-library
 ## 
@@ -25,7 +25,7 @@ MATLAB_ROOT               = C:/PROGRA~1/MATLAB/R2021b
 MATLAB_BIN                = C:/PROGRA~1/MATLAB/R2021b/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
 START_DIR                 = C:/Users/DELL/PYCHAR~1/MS-ANA~1/DATAPR~1/MATLAB~1
-TGT_FCN_LIB               = ISO_C++11
+TGT_FCN_LIB               = ISO_C
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 0
 MODEL_HAS_DYNAMICALLY_LOADED_SFCNS = 
@@ -173,7 +173,7 @@ INCLUDES = $(INCLUDES_BUILDINFO)
 ## DEFINES
 ###########################################################################
 
-DEFINES_ = -D__USE_MINGW_ANSI_STDIO=1 -DBUILDING_DATA_BASELINE
+DEFINES_ = -D__USE_MINGW_ANSI_STDIO=1
 DEFINES_CUSTOM = 
 DEFINES_STANDARD = -DMODEL=data_baseline
 
@@ -183,7 +183,7 @@ DEFINES = $(DEFINES_) $(DEFINES_CUSTOM) $(DEFINES_STANDARD)
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(START_DIR)/codegen/dll/data_baseline/data_baseline_data.cpp $(START_DIR)/codegen/dll/data_baseline/rt_nonfinite.cpp $(START_DIR)/codegen/dll/data_baseline/rtGetNaN.cpp $(START_DIR)/codegen/dll/data_baseline/rtGetInf.cpp $(START_DIR)/codegen/dll/data_baseline/data_baseline_initialize.cpp $(START_DIR)/codegen/dll/data_baseline/data_baseline_terminate.cpp $(START_DIR)/codegen/dll/data_baseline/data_baseline.cpp $(START_DIR)/codegen/dll/data_baseline/std.cpp $(START_DIR)/codegen/dll/data_baseline/minOrMax.cpp
+SRCS = $(START_DIR)/codegen/dll/data_baseline/data_baseline_data.c $(START_DIR)/codegen/dll/data_baseline/data_baseline_initialize.c $(START_DIR)/codegen/dll/data_baseline/data_baseline_terminate.c $(START_DIR)/codegen/dll/data_baseline/data_baseline.c $(START_DIR)/codegen/dll/data_baseline/data_baseline_emxutil.c $(START_DIR)/codegen/dll/data_baseline/data_baseline_emxAPI.c
 
 ALL_SRCS = $(SRCS)
 
@@ -191,7 +191,7 @@ ALL_SRCS = $(SRCS)
 ## OBJECTS
 ###########################################################################
 
-OBJS = data_baseline_data.obj rt_nonfinite.obj rtGetNaN.obj rtGetInf.obj data_baseline_initialize.obj data_baseline_terminate.obj data_baseline.obj std.obj minOrMax.obj
+OBJS = data_baseline_data.obj data_baseline_initialize.obj data_baseline_terminate.obj data_baseline.obj data_baseline_emxutil.obj data_baseline_emxAPI.obj
 
 ALL_OBJS = $(OBJS)
 
@@ -221,19 +221,41 @@ SYSTEM_LIBS =
 # C Compiler
 #---------------
 
-CFLAGS_ = -fvisibility=hidden
 CFLAGS_BASIC = $(DEFINES) $(INCLUDES) @$(COMPILER_COMMAND_FILE)
 
-CFLAGS += $(CFLAGS_) $(CFLAGS_BASIC)
+CFLAGS += $(CFLAGS_BASIC)
 
 #-----------------
 # C++ Compiler
 #-----------------
 
-CPPFLAGS_ = -fvisibility=hidden
 CPPFLAGS_BASIC = $(DEFINES) $(INCLUDES) @$(COMPILER_COMMAND_FILE)
 
-CPPFLAGS += $(CPPFLAGS_) $(CPPFLAGS_BASIC)
+CPPFLAGS += $(CPPFLAGS_BASIC)
+
+#---------------
+# C++ Linker
+#---------------
+
+CPP_LDFLAGS_ = $(DEF_FILE)
+
+CPP_LDFLAGS += $(CPP_LDFLAGS_)
+
+#------------------------------
+# C++ Shared Library Linker
+#------------------------------
+
+CPP_SHAREDLIB_LDFLAGS_ = $(DEF_FILE)
+
+CPP_SHAREDLIB_LDFLAGS += $(CPP_SHAREDLIB_LDFLAGS_)
+
+#-----------
+# Linker
+#-----------
+
+LDFLAGS_ = $(DEF_FILE)
+
+LDFLAGS += $(LDFLAGS_)
 
 #---------------------
 # MEX C++ Compiler
@@ -250,6 +272,14 @@ MEX_CPPFLAGS += $(MEX_CPP_Compiler_BASIC)
 MEX_Compiler_BASIC =  @$(COMPILER_COMMAND_FILE)
 
 MEX_CFLAGS += $(MEX_Compiler_BASIC)
+
+#--------------------------
+# Shared Library Linker
+#--------------------------
+
+SHAREDLIB_LDFLAGS_ = $(DEF_FILE)
+
+SHAREDLIB_LDFLAGS += $(SHAREDLIB_LDFLAGS_)
 
 ###########################################################################
 ## INLINED COMMANDS
@@ -292,7 +322,7 @@ execute : download
 
 $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS)
 	@echo "### Creating dynamic library "$(PRODUCT)" ..."
-	$(CPP_LD) $(CPP_SHAREDLIB_LDFLAGS) -o $(PRODUCT) @$(CMD_FILE) $(SYSTEM_LIBS) $(TOOLCHAIN_LIBS)
+	$(LD) $(SHAREDLIB_LDFLAGS) -o $(PRODUCT) @$(CMD_FILE) $(SYSTEM_LIBS) $(TOOLCHAIN_LIBS)
 	@echo "### Created: $(PRODUCT)"
 
 
@@ -336,40 +366,28 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS)
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
-data_baseline_data.obj : $(START_DIR)/codegen/dll/data_baseline/data_baseline_data.cpp
-	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+data_baseline_data.obj : $(START_DIR)/codegen/dll/data_baseline/data_baseline_data.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-rt_nonfinite.obj : $(START_DIR)/codegen/dll/data_baseline/rt_nonfinite.cpp
-	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+data_baseline_initialize.obj : $(START_DIR)/codegen/dll/data_baseline/data_baseline_initialize.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-rtGetNaN.obj : $(START_DIR)/codegen/dll/data_baseline/rtGetNaN.cpp
-	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+data_baseline_terminate.obj : $(START_DIR)/codegen/dll/data_baseline/data_baseline_terminate.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-rtGetInf.obj : $(START_DIR)/codegen/dll/data_baseline/rtGetInf.cpp
-	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+data_baseline.obj : $(START_DIR)/codegen/dll/data_baseline/data_baseline.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-data_baseline_initialize.obj : $(START_DIR)/codegen/dll/data_baseline/data_baseline_initialize.cpp
-	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+data_baseline_emxutil.obj : $(START_DIR)/codegen/dll/data_baseline/data_baseline_emxutil.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-data_baseline_terminate.obj : $(START_DIR)/codegen/dll/data_baseline/data_baseline_terminate.cpp
-	$(CPP) $(CPPFLAGS) -o "$@" "$<"
-
-
-data_baseline.obj : $(START_DIR)/codegen/dll/data_baseline/data_baseline.cpp
-	$(CPP) $(CPPFLAGS) -o "$@" "$<"
-
-
-std.obj : $(START_DIR)/codegen/dll/data_baseline/std.cpp
-	$(CPP) $(CPPFLAGS) -o "$@" "$<"
-
-
-minOrMax.obj : $(START_DIR)/codegen/dll/data_baseline/minOrMax.cpp
-	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+data_baseline_emxAPI.obj : $(START_DIR)/codegen/dll/data_baseline/data_baseline_emxAPI.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
 ###########################################################################

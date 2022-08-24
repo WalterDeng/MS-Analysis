@@ -1,0 +1,4 @@
+EXPORTS
+foo
+foo_initialize
+foo_terminate

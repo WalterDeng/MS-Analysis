@@ -1,0 +1,7 @@
+-I"C:\code\MS-Analysis\Data preprocessing\Matlab version\codegen\dll\data_preprocessing"
+-I"C:\code\MS-Analysis\Data preprocessing\Matlab version"
+-I"C:\Program Files\MATLAB\R2019a\extern\include"
+-I"C:\Program Files\MATLAB\R2019a\simulink\include"
+-I"C:\Program Files\MATLAB\R2019a\rtw\c\src"
+-I"C:\Program Files\MATLAB\R2019a\rtw\c\src\ext_mode\common"
+-I"C:\Program Files\MATLAB\R2019a\rtw\c\ert"
